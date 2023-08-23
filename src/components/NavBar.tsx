@@ -19,16 +19,16 @@ function NavBar() {
               src="/public/logo2.png"
               width="50"
               height="50"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top starImg"
             />{" "}
             Lily Sunshine
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link href="/about">ABOUT</Nav.Link>
-              <Nav.Link href="/books">BOOKS</Nav.Link>
-              <Nav.Link href="/free">FREE CONTENT!</Nav.Link>
+              <Nav.Link className="nav-link" href="/about">ABOUT</Nav.Link>
+              <Nav.Link className="nav-link" href="/books">BOOKS</Nav.Link>
+              <Nav.Link className="nav-link" href="/free">FREE CONTENT!</Nav.Link>
               {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">

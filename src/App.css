@@ -1,6 +1,164 @@
-.navbarBrand{
-  font-family: 'Delicious Handrawn', cursive;
+.navbarBrand {
+  font-family: "Delicious Handrawn", cursive;
   font-size: 2em !important;
 }
 
+.nav-link {
+  /* font-family: 'Patrick Hand', cursive; */
+  font-family: "Permanent Marker", cursive;
+  padding: 10px 30px !important;
+}
 
+Nav {
+  float: right !important;
+}
+
+/* .navbar-brand {
+  position: absolute;
+  left: 0px !important;
+} */
+
+.starImg {
+  display: inline-block;
+  /* animation: rotate 10s linear infinite !important; */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-familly : "Poppins", sans-serif; */
+}
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #43345d;
+  min-height: 800px;
+} */
+
+/* .card-body {
+  position: relative;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+} */
+.bookUL {
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+}
+.bookLI {
+  margin-top: 100px;
+  float: left;
+  height: 500px;
+  /* align-items: center;
+  justify-content: center; */
+}
+.centered-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  padding-top: 100px;
+}
+.centered-list li {
+  margin: 50px 50px 0px 50px; /* Add some spacing between the list items */
+  height: 500px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay appears above other content */
+}
+.ReactModal__Content,
+.ReactModal__Content--after-open {
+  background-color: #636568 !important;
+  margin-top: 60px;
+  border: 2px solid black !important;
+}
+.blurb {
+  padding-top: 30px;
+}
+.container {
+  text-align: center;
+}
+
+.container .card {
+  position: relative;
+  /* float: left; */
+  max-width: 300px;
+  /* height: 215px; */
+  height: 300px;
+  background-color: #fff;
+  /* margin: 30px 10px; */
+  margin: 0 auto;
+  padding: 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.container .card:hover {
+  height: 400px;
+}
+
+.container .card .image {
+  position: relative;
+  width: 260px;
+  height: 260px;
+
+  top: -40%;
+  left: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  /* z-index: 1; */
+}
+.close-button {
+  z-index: 1000 !important;
+  position: relative;
+  margin-top: 100px;
+  /* left: 0 !important; */
+  float: right;
+  margin-right: 40px;
+}
+
+.container .card .image img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.container .card .content {
+  position: relative;
+  top: -100px;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}

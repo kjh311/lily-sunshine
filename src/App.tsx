@@ -5,7 +5,6 @@ import Footer from './components/Footer'
 import HomePage from './components/HomePage'
 import About from './components/About'
 
-
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
@@ -14,8 +13,9 @@ function App() {
     <div className="App">
       <NavBar />
       
+      
+      
       <Footer />
-      {/* <Route path="/" Component={HomePage} /> */}
     </div>
   )
 }
