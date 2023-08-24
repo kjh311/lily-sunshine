@@ -13,6 +13,7 @@ interface CustomModalProps {
 
 const CustomModal: React.FC<CustomModalProps> = ({ isOpen, closeModal, content, images }) => {
   return (
+
     <div>
       {isOpen && (
         <div className="overlay" onClick={closeModal}></div>
@@ -27,15 +28,31 @@ const CustomModal: React.FC<CustomModalProps> = ({ isOpen, closeModal, content, 
           },
           content: {
             // Define modal styles here
+            // <p>Hi There!</p>
           },
         }}
       >
         <Button variant="danger" className="close-button" onClick={closeModal}>X</Button>
         {/* Use the ImageSlider component */}
-        <ImageSlider images={images} />
+        <div className="container">
+  <div className="row">
+    <div className="col-lg-6 col-md-12">
+      {/* <p>Column 1 - Large Screen</p> */}
+      <ImageSlider images={images} />
+    </div>
+
+    <div className="col-lg-6 col-md-12">
+      {/* <p>Column 2 - Large Screen</p> */}
+      {content}
+    </div>
+
+ 
+  </div>
+</div>
+       
 
         {/* Render the modal content */}
-        {content}
+        
 
         {/* Other modal content can go here */}
       </Modal>

@@ -1,14 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Modal from 'react-modal';
 
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+// Define the app element
+Modal.setAppElement('#root'); // Use the root element's id
+
+ReactDOM.render(
   <React.StrictMode>
-    {/* <Router> */}
     <App />
-    {/* </Router> */}
   </React.StrictMode>,
-)
+  document.getElementById('root')
+);

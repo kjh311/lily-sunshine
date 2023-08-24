@@ -8,11 +8,11 @@ function HomePage() {
   const [modals, setModals] = useState([
     {
       isOpen: false,
-      images: ['/Coloring-book.png', '/image2.jpg', '/image3.jpg'],
+      images: ['/Book1-Cover.png', '/Book1-a.svg', '/Book1-a.jpg', '/Book1-c.jpg', '/Book1-d.jpg', '/Book1-e.jpg', '/Book1-f.jpg'],
     },
     {
       isOpen: false,
-      images: ['/word-search-thumbnail.png', '/image5.jpg', '/image6.jpg'],
+      images: ['/Book2-Cover.png', '/.jpg', '/image6.jpg'],
     },
     // Add more modal data as needed
   ]);
@@ -31,12 +31,12 @@ function HomePage() {
 
   const booksData = [
     {
-      image: '/Coloring-book.png',
+      image: '/Book1-Cover.png',
       link: 'https://www.amazon.com/dp/B0C9S8B5ZJ',
       blurb: 'Magical Princesses Coloring Book',
     },
     {
-      image: '/word-search-thumbnail.png',
+      image: '/Book2-Cover.png',
       link: 'https://www.amazon.com/dp/B0C9S8B5ZJ',
       blurb: 'Summer Word Search Large Print',
     },
@@ -66,8 +66,9 @@ function HomePage() {
             key={index}
             isOpen={modal.isOpen}
             closeModal={() => closeModal(index)}
-            content={<p>Modal Content for Book {index + 1}</p>}
+            
             images={modal.images}
+            content={<p>Hi There!</p>}
           />
         ))}
       </Container>
