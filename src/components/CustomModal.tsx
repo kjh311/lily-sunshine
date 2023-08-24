@@ -1,8 +1,8 @@
 // CustomModal.tsx
-import React from 'react';
-import Modal from 'react-modal';
-import Button from 'react-bootstrap/Button';
-import ImageSlider from './ImageSlider';
+import React from "react";
+import Modal from "react-modal";
+import Button from "react-bootstrap/Button";
+import ImageSlider from "./ImageSlider";
 
 interface CustomModalProps {
   isOpen: boolean;
@@ -11,13 +11,15 @@ interface CustomModalProps {
   images: string[]; // Images can be defined within the modal
 }
 
-const CustomModal: React.FC<CustomModalProps> = ({ isOpen, closeModal, content, images }) => {
+const CustomModal: React.FC<CustomModalProps> = ({
+  isOpen,
+  closeModal,
+  content,
+  images,
+}) => {
   return (
-
     <div>
-      {isOpen && (
-        <div className="overlay" onClick={closeModal}></div>
-      )}
+      {isOpen && <div className="overlay" onClick={closeModal}></div>}
       <Modal
         isOpen={isOpen}
         onRequestClose={closeModal}
@@ -32,27 +34,25 @@ const CustomModal: React.FC<CustomModalProps> = ({ isOpen, closeModal, content, 
           },
         }}
       >
-        <Button variant="danger" className="close-button" onClick={closeModal}>X</Button>
-        {/* Use the ImageSlider component */}
+        <Button variant="danger" className="close-button" onClick={closeModal}>
+          X
+        </Button>
+
         <div className="container">
-  <div className="row">
-    <div className="col-lg-6 col-md-12">
-      {/* <p>Column 1 - Large Screen</p> */}
-      <ImageSlider images={images} />
-    </div>
+          <div className="row">
+            <div className="col-lg-6 col-md-12">
+              <ImageSlider images={images} />
+            </div>
 
-    <div className="col-lg-6 col-md-12">
-      {/* <p>Column 2 - Large Screen</p> */}
-      {content}
-    </div>
+            
 
- 
-  </div>
-</div>
-       
+            <div className="col-lg-6 col-md-12">
+              {content}
+            bB</div>
+          </div>
+        </div>
 
         {/* Render the modal content */}
-        
 
         {/* Other modal content can go here */}
       </Modal>

@@ -25,7 +25,7 @@ const Book: React.FC<MyComponentProps> = (props) => {
           <CustomModal
             isOpen={false}
             closeModal={() => {}} // Placeholder function, as 'closeModal' is managed by the parent component
-            content={<p>Hi There!</p>}
+            content={<p></p>}
             images={[image]}
           />
         </div>
