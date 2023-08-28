@@ -21,7 +21,14 @@ const Book: React.FC<MyComponentProps> = (props) => {
         <div className="content">
           <p className="blurb">{blurb}</p>
           {/* <p>Link: {link}</p> */}
-          <Button variant="primary" onClick={() => onOpenModal(0)}>More Info</Button> {/* Pass an index value */}
+          <Button className="book-btn" variant="warning" onClick={() => onOpenModal(0)}>More Info</Button> {/* Pass an index value */}
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="book-btn" variant="primary">Buy on Amazon</Button>
+          </a>
           <CustomModal
             isOpen={false}
             closeModal={() => {}} // Placeholder function, as 'closeModal' is managed by the parent component

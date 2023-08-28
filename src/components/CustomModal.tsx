@@ -48,7 +48,7 @@ const CustomModal: React.FC<CustomModalProps> = ({
 
             <div className="col-lg-6 col-md-12">
               {content}
-            bB</div>
+            </div>
           </div>
         </div>
 

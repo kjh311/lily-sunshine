@@ -135,7 +135,7 @@ Nav {
 .ReactModal__Content,
 .ReactModal__Content--after-open {
   background-color: #343638 !important;
-  margin-top: 30px !important;
+  /* margin-top: 30px !important; */
   border: 2px solid black !important;
   height: 100vh;
   width: 100vw;
@@ -145,6 +145,15 @@ Nav {
 }
 .blurb {
   padding-top: 30px;
+  /* font-family: "Anton", sans-serif; */
+  font-family: "Chewy", cursive;
+  /* font-family: "Delicious Handrawn", cursive; */
+  /* font-family: "Lilita One", cursive; */
+  /* font-family: 'Londrina Solid', cursive;
+  font-family: 'Patrick Hand', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Rock Salt', cursive; */
+  font-size: 19px;
 }
 .container {
   text-align: center;
@@ -206,10 +215,12 @@ Nav {
 
 .container .card .content {
   position: relative;
-  top: -100px;
+  top: -130px;
   padding: 10px 15px;
   color: #111;
   text-align: center;
+  /* font-family: "Chewy", cursive; */
+  /* font-family: "Permanent Marker", cursive; */
 
   visibility: hidden;
   opacity: 0;
@@ -360,4 +371,25 @@ button:hover {
 .wrapper {
   flex-grow: 1;
   min-height: 50vh;
+}
+
+.book-ul {
+  text-align: left;
+  list-style-type: none;
+  font-size: 17px;
+}
+
+.amazon-buy-btn {
+  font-size: 20px !important;
+}
+
+.book-btn {
+  /* font-family: "Anton", sans-serif !important; */
+  /* font-family: "Chewy", cursive !important; */
+  /* font-family: "Delicious Handrawn", cursive; */
+  /* font-family: "Lilita One", cursive; */
+  /* font-family: "Londrina Solid", cursive; */
+  /* font-family: "Patrick Hand", cursive; */
+  /* font-family: "Permanent Marker", cursive; */
+  /* font-family: "Rock Salt", cursive !important; */
 }
